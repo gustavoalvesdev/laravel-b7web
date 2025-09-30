@@ -18,6 +18,11 @@ class SiteController extends Controller
 
     public function contact()
     {
-        return view('contact');
+
+        $currentDate = date('d/m/Y');
+
+        $data = ['current_date' => $currentDate];
+
+        return view('contact', $data);
     }
 }
