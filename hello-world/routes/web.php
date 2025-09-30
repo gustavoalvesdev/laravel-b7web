@@ -1,10 +1,8 @@
 <?php
 
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HelloController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/hello/{name}/{age}', [HelloController::class, 'helloWorld']);
+Route::get('/', [SiteController::class, 'home']);
+Route::get('/services', [SiteController::class, 'services']);
+Route::get('/contact', [SiteController::class, 'contact']);
