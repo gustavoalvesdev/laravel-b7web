@@ -1,11 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HelloController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello/{name}/{age}', function ($name, $age) {
-    return view('hello', ['name' => $name, 'age' => $age]);
-});
+Route::get('/hello/{name}/{age}', [HelloController::class, 'helloWorld']);

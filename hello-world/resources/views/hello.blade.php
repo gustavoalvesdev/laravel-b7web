@@ -1,1 +1,1 @@
-<h1>Hello, {{ $name ?? 'Visitante' }}, você tem {{ $age }} anos</h1>
+<h1>Hello, {{ $nome ?? 'Visitante' }}, você tem {{ $idade }} anos</h1>
