@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', 'Serviços')
+
 @section('content')
 <h1>Conheça nossos serviços</h1>
 <ul>
