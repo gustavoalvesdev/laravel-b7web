@@ -18,6 +18,8 @@
         @yield('content')
     </main>
     <hr />
-    <footer>Rodapé</footer>
+    <footer>
+        @include('footer')
+    </footer>
 </body>
 </html>
